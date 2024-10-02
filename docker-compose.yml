@@ -1,0 +1,11 @@
+services:
+  php: 
+    build: .
+    ports: 
+      - "80:80"
+  db:
+    image: mysql:latest  
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345  
+    
