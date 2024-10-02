@@ -3,6 +3,8 @@ services:
     build: .
     ports: 
       - "80:80"
+    volumes:
+      - ./app:/var/www/html 
   db:
     image: mysql:latest  
     restart: always
